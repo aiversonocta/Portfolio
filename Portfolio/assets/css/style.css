@@ -1,0 +1,236 @@
+* {
+  margin: 0;
+  padding: 0;
+  background-color: #fff;
+  font-family: Arial, Helvetica, sans-serif;
+  color: black;
+  scroll-behavior: smooth;
+}
+a {
+  text-decoration: none;
+}
+header {
+  position: fixed;
+  padding: 10px;
+  display: flex;
+}
+.logo {
+  margin: 20px;
+  color: blueviolet;
+}
+.menu {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  justify-content: right;
+  margin-left: 25rem;
+}
+.menu a {
+  border-radius: 5px;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+.menu a:hover {
+  color: blueviolet;
+}
+.nav__btn {
+  background-color: blueviolet;
+  color: #fff;
+}
+.nav__btn:hover {
+  color: blueviolet;
+  background-color: #fff;
+}
+main {
+  max-width: 100%;
+}
+.home {
+  display: grid;
+  align-items: center;
+  grid-template-columns: repeat(2, 2fr);
+  padding: 20px;
+  margin-left: 150px;
+  margin-bottom: 100px;
+}
+.home h1 {
+  text-align: left;
+  font-size: xxx-large;
+}
+.pic_pr {
+  color: blueviolet;
+}
+.profile {
+  width: 250px;
+  height: 300px;
+  border-radius: 10px;
+  justify-self: center;
+}
+.btn__pr {
+  display: inline-block;
+  color: #fff;
+  align-items: center;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  background-color: blueviolet;
+  margin-bottom: 80px;
+  border-radius: 5px;
+  margin-left: 150px;
+}
+.btn__pr:hover {
+  color: blueviolet;
+  background-color: #fff;
+}
+.abt__container {
+  margin-top: 100px;
+  margin-bottom: 200px;
+}
+.abt__container h1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 60px;
+  margin-bottom: 15px;
+}
+.about {
+  display: grid;
+  align-items: center;
+  grid-template-columns: repeat(2, 2fr);
+  padding: 20px;
+  margin-left: 100px;
+  margin-bottom: 200px;
+}
+.about_content {
+  text-align: left;
+  margin-right: 50px;
+}
+.about_content p {
+  margin-top: 10px;
+}
+.pr__skills {
+  margin-top: 15px;
+  margin-bottom: 200px;
+}
+.pr__skills h1 {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+  margin-bottom: 50px;
+}
+.pr__skills h2 {
+  align-items: center;
+  justify-content: center;
+  margin-top: 30px;
+  margin-left: 100px;
+  margin-right: 100px;
+}
+.pr__skills p {
+  align-items: center;
+  justify-content: center;
+  margin-top: 30px;
+  margin-left: 100px;
+  margin-right: 100px;
+}
+.pr__container {
+  display: grid;
+  grid-template-columns: repeat(2, 2fr);
+  justify-content: center;
+  margin-bottom: 100px;
+}
+.pr__container img {
+  width: 500px;
+}
+.work {
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+.work h1 {
+  display: flex;
+  margin-bottom: 50px;
+  justify-content: center;
+}
+.work__img {
+  display: grid;
+  grid-template-columns: repeat(3, 0.5fr);
+  gap: 1rem;
+  max-width: 100%;
+  align-items: center;
+  justify-content: center;
+  margin-left: 50px;
+  margin-right: 50px;
+  justify-content: space-around;
+}
+.work__img img {
+  width: 360px;
+  height: 220px;
+  margin-top: 10px;
+  border-radius: 20px;
+}
+.contc {
+  margin-top: 120px;
+}
+.contc h1 {
+  display: flex;
+  margin-bottom: 50px;
+  justify-content: center;
+}
+.cnt__container form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.cnt__container input {
+  margin-top: 20px;
+  border-radius: 5px;
+  padding: 15px 100px 15px 15px;
+}
+.cnt__container textarea {
+  display: flex;
+  margin-top: 20px;
+  width: 255px;
+  height: 150px;
+  padding: 15px;
+  border-radius: 5px;
+}
+.btn {
+  display: flex;
+  justify-content: center;
+}
+.btn__ct {
+  display: flex;
+  width: 100px;
+  color: #fff;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  background-color: blueviolet;
+  margin-bottom: 70px;
+  border-radius: 5px;
+  margin-top: 15px;
+  justify-content: center;
+}
+.btn__ct:hover {
+  color: blueviolet;
+  background-color: #fff;
+}
+.btn__ct a {
+  justify-content: center;
+}
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: blueviolet;
+}
+footer p {
+  display: inline-block;
+  text-align: center;
+  justify-self: center;
+  padding: 0;
+  background-color: blueviolet;
+  color: #fff;
+}
