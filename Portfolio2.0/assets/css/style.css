@@ -11,7 +11,7 @@
   top: 0;
   left: 0;
   width: 100%;
-  padding: 35px 12%;
+  padding: 25px 3% 25px 9%;
   background: rgba(0, 0, 0, 0.8);
   backdrop-filter: blur(10px);
   display: flex;
@@ -37,7 +37,7 @@ span {
   font-size: 18px;
   color: white;
   font-weight: 500;
-  margin: 0 20px;
+  margin: 0 12px;
   border-bottom: 3px solid transparent;
   transition: 0.3s ease;
 }
@@ -47,7 +47,7 @@ span {
   border-bottom: 3px solid orangered;
 }
 .contact {
-  padding: 10px 28px;
+  padding: 10px 25px;
   background-color: white;
   color: black;
   border: 2px solid transparent;
@@ -69,7 +69,7 @@ span {
   display: flex;
   align-items: center;
   gap: 7em;
-  padding: 30px 12% 0;
+  padding: 90px 12% 0;
 }
 .home-content {
   max-width: 800px;
@@ -249,4 +249,9 @@ span {
   text-align: center;
   font-size: 12px;
   color: white;
+}
+@media (max-width: 990px) {
+  .header {
+    flex-direction: column;
+  }
 }

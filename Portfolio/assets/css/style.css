@@ -10,13 +10,14 @@ a {
   text-decoration: none;
 }
 header {
-  position: fixed;
-  padding: 10px;
+  padding: 10px 100px 10px 10px;
   display: flex;
+  justify-content: space-between;
+  position: fixed;
 }
 .logo {
   margin: 20px;
-  color: blueviolet;
+  color: orangered;
 }
 .menu {
   list-style: none;
@@ -24,7 +25,7 @@ header {
   gap: 1rem;
   align-items: center;
   justify-content: right;
-  margin-left: 25rem;
+  margin-left: 28rem;
 }
 .menu a {
   border-radius: 5px;
@@ -34,14 +35,14 @@ header {
   padding-bottom: 15px;
 }
 .menu a:hover {
-  color: blueviolet;
+  color: orangered;
 }
 .nav__btn {
-  background-color: blueviolet;
+  background-color: orangered;
   color: #fff;
 }
 .nav__btn:hover {
-  color: blueviolet;
+  color: orangered;
   background-color: #fff;
 }
 main {
@@ -52,6 +53,7 @@ main {
   align-items: center;
   grid-template-columns: repeat(2, 2fr);
   padding: 20px;
+  padding-top: 80px;
   margin-left: 150px;
   margin-bottom: 100px;
 }
@@ -60,12 +62,13 @@ main {
   font-size: xxx-large;
 }
 .pic_pr {
-  color: blueviolet;
+  color: orangered;
 }
 .profile {
   width: 250px;
   height: 300px;
   border-radius: 10px;
+  align-self: center;
   justify-self: center;
 }
 .btn__pr {
@@ -76,18 +79,19 @@ main {
   padding-right: 30px;
   padding-top: 15px;
   padding-bottom: 15px;
-  background-color: blueviolet;
+  background-color: orangered;
   margin-bottom: 80px;
   border-radius: 5px;
   margin-left: 150px;
 }
 .btn__pr:hover {
-  color: blueviolet;
+  color: orangered;
   background-color: #fff;
 }
 .abt__container {
   margin-top: 100px;
   margin-bottom: 200px;
+  padding-top: 80px;
 }
 .abt__container h1 {
   display: flex;
@@ -114,6 +118,7 @@ main {
 .pr__skills {
   margin-top: 15px;
   margin-bottom: 200px;
+  padding-top: 80px;
 }
 .pr__skills h1 {
   display: flex;
@@ -147,10 +152,11 @@ main {
 .work {
   margin-top: 100px;
   margin-bottom: 100px;
+  padding-top: 100px;
 }
 .work h1 {
   display: flex;
-  margin-bottom: 50px;
+  margin-bottom: 5px;
   justify-content: center;
 }
 .work__img {
@@ -172,10 +178,11 @@ main {
 }
 .contc {
   margin-top: 120px;
+  padding-top: 100px;
 }
 .contc h1 {
   display: flex;
-  margin-bottom: 50px;
+  margin-bottom: 45px;
   justify-content: center;
 }
 .cnt__container form {
@@ -208,14 +215,14 @@ main {
   padding-right: 30px;
   padding-top: 15px;
   padding-bottom: 15px;
-  background-color: blueviolet;
+  background-color: orangered;
   margin-bottom: 70px;
   border-radius: 5px;
   margin-top: 15px;
   justify-content: center;
 }
 .btn__ct:hover {
-  color: blueviolet;
+  color: orangered;
   background-color: #fff;
 }
 .btn__ct a {
@@ -224,13 +231,13 @@ main {
 footer {
   text-align: center;
   padding: 20px;
-  background-color: blueviolet;
+  background-color: orangered;
 }
 footer p {
   display: inline-block;
   text-align: center;
   justify-self: center;
   padding: 0;
-  background-color: blueviolet;
+  background-color: orangered;
   color: #fff;
 }
