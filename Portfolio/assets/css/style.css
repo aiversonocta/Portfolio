@@ -1,243 +1,306 @@
+/* =====================
+   RESET + BASE
+===================== */
 * {
   margin: 0;
   padding: 0;
-  background-color: #fff;
-  font-family: Arial, Helvetica, sans-serif;
-  color: black;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
   scroll-behavior: smooth;
 }
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.6rem;
+  line-height: 1.6;
+  background: #fff;
+  color: #000;
+}
+
 a {
   text-decoration: none;
+  color: inherit;
 }
+
+/* =====================
+   VARIÁVEIS
+===================== */
+:root {
+  --primary: orangered;
+  --dark: #000;
+  --light: #fff;
+  --max-width: 1200px;
+}
+
+/* =====================
+   HEADER
+===================== */
 header {
-  padding: 10px 100px 10px 10px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 1.5rem 5%;
+  background: #fff;
   display: flex;
   justify-content: space-between;
-  position: fixed;
-}
-.logo {
-  margin: 20px;
-  color: orangered;
-}
-.menu {
-  list-style: none;
-  display: flex;
-  gap: 1rem;
   align-items: center;
-  justify-content: right;
-  margin-left: 28rem;
+  z-index: 100;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
+
+.logo {
+  font-size: 2.4rem;
+  font-weight: bold;
+  color: var(--primary);
+}
+
+.menu {
+  display: flex;
+  gap: 1.6rem;
+  align-items: center;
+}
+
+.menu li {
+  list-style: none;
+}
+
 .menu a {
-  border-radius: 5px;
-  padding-left: 30px;
-  padding-right: 30px;
-  padding-top: 15px;
-  padding-bottom: 15px;
+  padding: 1rem 1.8rem;
+  border-radius: 0.5rem;
+  transition: 0.3s;
 }
+
 .menu a:hover {
-  color: orangered;
+  color: var(--primary);
 }
+
 .nav__btn {
-  background-color: orangered;
-  color: #fff;
+  background: var(--primary);
+  color: var(--light);
 }
+
 .nav__btn:hover {
-  color: orangered;
-  background-color: #fff;
+  background: var(--light);
+  color: var(--primary);
+  border: 1px solid var(--primary);
 }
+
+/* =====================
+   MAIN
+===================== */
 main {
-  max-width: 100%;
+  max-width: var(--max-width);
+  margin: auto;
+  padding: 10rem 5% 0;
 }
+
+/* =====================
+   HOME
+===================== */
 .home {
   display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
   align-items: center;
-  grid-template-columns: repeat(2, 2fr);
-  padding: 20px;
-  padding-top: 80px;
-  margin-left: 150px;
-  margin-bottom: 100px;
+  margin-bottom: 6rem;
 }
+
 .home h1 {
-  text-align: left;
-  font-size: xxx-large;
+  font-size: clamp(3rem, 6vw, 5.2rem);
 }
+
 .pic_pr {
-  color: orangered;
+  color: var(--primary);
 }
+
 .profile {
-  width: 250px;
-  height: 300px;
-  border-radius: 10px;
-  align-self: center;
+  width: 100%;
+  max-width: 28rem;
+  border-radius: 1rem;
   justify-self: center;
 }
+
+/* =====================
+   BOTÃO PRINCIPAL
+===================== */
 .btn__pr {
   display: inline-block;
-  color: #fff;
-  align-items: center;
-  padding-left: 30px;
-  padding-right: 30px;
-  padding-top: 15px;
-  padding-bottom: 15px;
-  background-color: orangered;
-  margin-bottom: 80px;
-  border-radius: 5px;
-  margin-left: 150px;
+  margin: 2rem 0 6rem;
+  padding: 1.4rem 3rem;
+  background: var(--primary);
+  color: var(--light);
+  border-radius: 0.5rem;
+  transition: 0.3s;
 }
+
 .btn__pr:hover {
-  color: orangered;
-  background-color: #fff;
+  background: var(--light);
+  color: var(--primary);
+  border: 1px solid var(--primary);
 }
+
+/* =====================
+   ABOUT
+===================== */
 .abt__container {
-  margin-top: 100px;
-  margin-bottom: 200px;
-  padding-top: 80px;
+  margin-bottom: 8rem;
 }
+
 .abt__container h1 {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-top: 60px;
-  margin-bottom: 15px;
+  text-align: center;
+  margin-bottom: 4rem;
 }
+
 .about {
   display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
   align-items: center;
-  grid-template-columns: repeat(2, 2fr);
-  padding: 20px;
-  margin-left: 100px;
-  margin-bottom: 200px;
 }
-.about_content {
-  text-align: left;
-  margin-right: 50px;
-}
+
 .about_content p {
-  margin-top: 10px;
+  margin-top: 1.5rem;
 }
+
+/* =====================
+   SKILLS
+===================== */
 .pr__skills {
-  margin-top: 15px;
-  margin-bottom: 200px;
-  padding-top: 80px;
+  margin-bottom: 8rem;
 }
+
 .pr__skills h1 {
-  display: flex;
-  justify-content: center;
-  margin-top: 30px;
-  margin-bottom: 50px;
+  text-align: center;
+  margin-bottom: 2rem;
 }
-.pr__skills h2 {
-  align-items: center;
-  justify-content: center;
-  margin-top: 30px;
-  margin-left: 100px;
-  margin-right: 100px;
-}
+
+.pr__skills h2,
 .pr__skills p {
-  align-items: center;
-  justify-content: center;
-  margin-top: 30px;
-  margin-left: 100px;
-  margin-right: 100px;
+  text-align: center;
+  max-width: 80rem;
+  margin: auto;
 }
+
 .pr__container {
   display: grid;
-  grid-template-columns: repeat(2, 2fr);
-  justify-content: center;
-  margin-bottom: 100px;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+  margin-top: 4rem;
+  align-items: center;
 }
+
 .pr__container img {
-  width: 500px;
+  width: 100%;
+  max-width: 45rem;
+  justify-self: center;
 }
+
+/* =====================
+   WORK
+===================== */
 .work {
-  margin-top: 100px;
-  margin-bottom: 100px;
-  padding-top: 100px;
+  margin-bottom: 8rem;
 }
+
 .work h1 {
-  display: flex;
-  margin-bottom: 5px;
-  justify-content: center;
+  text-align: center;
+  margin-bottom: 3rem;
 }
+
 .work__img {
   display: grid;
-  grid-template-columns: repeat(3, 0.5fr);
-  gap: 1rem;
-  max-width: 100%;
-  align-items: center;
-  justify-content: center;
-  margin-left: 50px;
-  margin-right: 50px;
-  justify-content: space-around;
+  grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+  gap: 2rem;
 }
+
 .work__img img {
-  width: 360px;
-  height: 220px;
-  margin-top: 10px;
-  border-radius: 20px;
+  width: 100%;
+  border-radius: 1.5rem;
 }
+
+/* =====================
+   CONTACT
+===================== */
 .contc {
-  margin-top: 120px;
-  padding-top: 100px;
+  margin-bottom: 8rem;
 }
+
 .contc h1 {
-  display: flex;
-  margin-bottom: 45px;
-  justify-content: center;
+  text-align: center;
+  margin-bottom: 3rem;
 }
+
 .cnt__container form {
+  max-width: 40rem;
+  margin: auto;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  gap: 1.5rem;
 }
-.cnt__container input {
-  margin-top: 20px;
-  border-radius: 5px;
-  padding: 15px 100px 15px 15px;
-}
+
+.cnt__container input,
 .cnt__container textarea {
-  display: flex;
-  margin-top: 20px;
-  width: 255px;
-  height: 150px;
-  padding: 15px;
-  border-radius: 5px;
+  padding: 1.4rem;
+  border-radius: 0.5rem;
+  border: 1px solid #ccc;
+  font-size: 1.6rem;
 }
+
+textarea {
+  resize: none;
+}
+
+/* =====================
+   BOTÃO CONTACT
+===================== */
 .btn {
   display: flex;
   justify-content: center;
 }
+
 .btn__ct {
-  display: flex;
-  width: 100px;
-  color: #fff;
-  padding-left: 30px;
-  padding-right: 30px;
-  padding-top: 15px;
-  padding-bottom: 15px;
-  background-color: orangered;
-  margin-bottom: 70px;
-  border-radius: 5px;
-  margin-top: 15px;
-  justify-content: center;
+  margin-top: 2rem;
+  padding: 1.4rem 3rem;
+  background: var(--primary);
+  color: var(--light);
+  border-radius: 0.5rem;
+  transition: 0.3s;
 }
+
 .btn__ct:hover {
-  color: orangered;
-  background-color: #fff;
+  background: var(--light);
+  color: var(--primary);
+  border: 1px solid var(--primary);
 }
-.btn__ct a {
-  justify-content: center;
-}
+
+/* =====================
+   FOOTER
+===================== */
 footer {
   text-align: center;
-  padding: 20px;
-  background-color: orangered;
+  padding: 2rem;
+  background: var(--primary);
+  color: var(--light);
 }
-footer p {
-  display: inline-block;
-  text-align: center;
-  justify-self: center;
-  padding: 0;
-  background-color: orangered;
-  color: #fff;
+
+/* =====================
+   MEDIA QUERIES
+===================== */
+@media (max-width: 900px) {
+  .home,
+  .about,
+  .pr__container {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .menu {
+    display: none;
+  }
 }
