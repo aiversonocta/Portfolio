@@ -106,7 +106,8 @@ main {
   grid-template-columns: 1fr 1fr;
   gap: 4rem;
   align-items: center;
-  margin-bottom: 6rem;
+  padding-top: 8rem;
+  margin-bottom: 8rem;
 }
 
 .home h1 {
@@ -147,6 +148,7 @@ main {
    ABOUT
 ===================== */
 .abt__container {
+  padding-top: 8rem;
   margin-bottom: 8rem;
 }
 
@@ -170,6 +172,7 @@ main {
    SKILLS
 ===================== */
 .pr__skills {
+  padding-top: 8rem;
   margin-bottom: 8rem;
 }
 
@@ -203,6 +206,7 @@ main {
    WORK
 ===================== */
 .work {
+  padding-top: 8rem;
   margin-bottom: 8rem;
 }
 
