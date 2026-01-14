@@ -29,7 +29,7 @@ a {
    VARIÁVEIS
 ===================== */
 :root {
-  --primary: orangered;
+  --primary: rgb(31, 31, 214);
   --dark: #000;
   --light: #fff;
   --max-width: 1200px;
@@ -119,8 +119,8 @@ main {
 
 .profile {
   width: 100%;
-  max-width: 28rem;
-  border-radius: 1rem;
+  max-width: 25rem;
+  border-radius: 2rem;
   justify-self: center;
 }
 
@@ -214,7 +214,7 @@ main {
 .work__img {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
-  gap: 2rem;
+  gap: 2.5rem;
 }
 
 .work__img img {
