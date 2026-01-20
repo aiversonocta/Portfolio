@@ -63,6 +63,13 @@ header {
   gap: 1.6rem;
   align-items: center;
 }
+.menu-toggle {
+  display: none;
+  font-size: 2.5rem;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
 
 .menu li {
   list-style: none;
@@ -304,7 +311,43 @@ footer {
 }
 
 @media (max-width: 768px) {
+  header {
+    padding: 1rem 2rem;
+  }
+
+  .menu-toggle {
+    display: block;
+    z-index: 1001;
+  }
+
   .menu {
-    display: none;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    width: 100%;
+    background: white;
+
+    flex-direction: column;
+    align-items: center;
+
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+  }
+
+  .menu li {
+    width: 100%;
+    text-align: center;
+  }
+
+  .menu a {
+    display: block;
+    padding: 1.5rem;
+    width: 100%;
+  }
+
+  /* quando o menu estiver aberto */
+  .menu.active {
+    max-height: 500px;
   }
 }
