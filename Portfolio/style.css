@@ -268,9 +268,10 @@ textarea {
 /* =====================
    BOTÃO CONTACT
 ===================== */
-.btn {
-  display: flex;
-  justify-content: center;
+.cnt__container button {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .btn__ct {
