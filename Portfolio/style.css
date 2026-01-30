@@ -231,6 +231,15 @@ main {
 .work__img img {
   width: 100%;
   border-radius: 1.5rem;
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+  cursor: pointer; /* opcional, indica que é interativo */
+}
+
+.work__img img:hover {
+  transform: scale(1.05); /* aumenta 5% */
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); /* sombra suave */
 }
 
 /* =====================
@@ -351,4 +360,40 @@ footer {
   .menu.active {
     max-height: 500px;
   }
+}
+
+/* =====================
+   SCROLL ANIMATION
+===================== */
+.reveal {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: all 0.8s ease;
+}
+
+.reveal.active {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.from-left {
+  opacity: 0;
+  transform: translateX(-50px);
+  transition: all 0.8s ease;
+}
+
+.from-left.active {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.from-right {
+  opacity: 0;
+  transform: translateX(50px);
+  transition: all 0.8s ease;
+}
+
+.from-right.active {
+  opacity: 1;
+  transform: translateX(0);
 }
